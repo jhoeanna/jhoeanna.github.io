@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+html {
+  background-color: white;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+body {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: #443b3b; }
+
+div.fixed-background {
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48ZyBmaWxsPSIjREZERkRGIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxIi8+PC9nPjwvc3ZnPg=="); }
+
+.intro {
+  padding: 10em 0; }
+
+.name {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  color: gray; }
+
+.title {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px 0; }
+
+.title:after {
+  content: ' ';
+  display: block;
+  width: 50px;
+  margin: 10px auto -10px 0;
+  border: 2px solid #443b3b; }
+
+.small {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 2em; 
+  color: #e87388; }
+
+.describe {
+  font-size: 1.3em;
+  line-height: 2em;
+  margin: 20px 0;
+  color: gray; }
+
+@media screen and (max-device-width: 415px) {
+  .fixed-background {
+    background-size: 6%; }
+
+  .intro {
+    padding: 10em 0; }
+
+  .name {
+    font-size: 3em; }
+
+  .title {
+    margin: 50px 0;
+    font-size: 6em; }
+
+  .title:after {
+    border-width: 6px;
+    width: 100px; }
+
+  .small {
+    font-size: 2em;
+    line-height: 1em; }
+
+  .describe {
+    font-size: 2em;
+    line-height: 1.4em;
+    margin-top: 2em; }
+
+  .contact-links {
+    margin: 3em 0; }
+    .contact-links li {
+      margin: 0;
+      font-size: 1.4em; } }
+section.top {
+  background: transparent;
+  padding: 2em 4em 2em 6em; }
+
+section {
+  position: relative;
+  background: rgba(238, 238, 238, 0.3);
+  padding: 5em; }
+
+section:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+aside {
+  width: 20%;
+  float: left; }
+  aside h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase; }
+  aside h1:after {
+    content: ' ';
+    display: block;
+    width: 30px;
+    margin: 10px 0;
+    border: 2px solid grey; }
+
+article {
+  width: 80%;
+  float: left; }
+
+ul.contact-links {
+  text-align: left; }
+  ul.contact-links a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
+  ul.contact-links a:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
+  ul.contact-links li {
+    color: #000;
+    cursor: pointer;
+    margin: auto 2em;
+    display: inline-block; }
+  ul.contact-links li:hover {
+    color: gray; }
+  ul.contact-links i.fa {
+    margin: 15px; 
+    color: #e87388; }
+
+.dual-col {
+  width: 50%;
+  float: left;
+  text-align: left;
+  margin: 1em 0; }
+  .dual-col a:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
+  .dual-col a:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .dual-col a {
+    color: inherit;
+    text-decoration: none; }
+    .dual-col a .project-name {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 10px 0;
+      margin-right: 10px;
+      text-transform: uppercase; }
+    .dual-col a i.fa {
+      margin: 0 5px;
+      font-size: 20px; }
+  .dual-col img {
+    width: 80%;
+    margin-bottom: 10px; }
+  .dual-col .text-center {
+    text-align: center; }
+  .dual-col .tag {
+    border: 1px solid #443b3b;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px; }
+  .dual-col p {
+    font-size: 1em;
+    line-height: 1.4em;
+    color: gray;
+    width: 85%;
+    margin: 20px 0; }
+
+.projects-container {
+  height: 80%;
+  position: absolute;
+  right: 10%;
+  width: 25%; }
+
+ul.projects {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  overflow: scroll; }
+  ul.projects li {
+    width: 100%;
+    overflow: hidden;
+    transition: background 1s;
+    text-align: center; }
+    ul.projects li img {
+      display: block; }
+  ul.projects li {
+    margin-top: 5px; }
+  ul.projects li.selected {
+    background-color: #80DEEA; }
+
+ul.projects:after {
+  position: fixed;
+  top: 10%;
+  width: 25%;
+  height: 80%;
+  content: "";
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  pointer-events: none;
+  /* so the text is still selectable */ }
+
+::-webkit-scrollbar {
+  display: none; }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
+
+@media screen and (max-device-width: 415px) {
+  aside {
+    width: 100%; }
+    aside h1 {
+      font-size: 4em; }
+    aside h1:after {
+      border-width: 6px;
+      width: 80px; }
+
+  article {
+    width: 100%; }
+
+  .dual-col {
+    width: 100%; }
+    .dual-col a .project-name {
+      font-size: 3em;
+      margin: 1em 0;
+      margin-right: 0.5em; }
+    .dual-col a i.fa {
+      font-size: 3em;
+      margin: 0 0.2em; }
+    .dual-col .tag {
+      font-size: 2.5em;
+      padding: 12px 14px;
+      margin: 0 12px; }
+    .dual-col img {
+      width: 100%;
+      height: 30em;
+      margin: 1.5em 0; }
+    .dual-col p {
+      font-size: 2em;
+      margin: 1em 0;
+      width: 100%; }
+
+  ul.contact-links {
+    text-align: center; } }
